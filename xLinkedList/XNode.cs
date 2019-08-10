@@ -8,16 +8,13 @@ namespace xLinkedList
 	{
 		private readonly object data;
 
-		private readonly XNode next;
-
 		public object Data => data;
 
-		public XNode Next => next;
+		public XNode Next { get; set; }
 
-		public XNode(object data, XNode next)
+		public XNode(object data)
 		{
 			this.data = data;
-			this.next = next;
 		}
 	}
 }
