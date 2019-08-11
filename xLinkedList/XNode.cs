@@ -4,15 +4,28 @@ using System.Text;
 
 namespace xLinkedList
 {
+	/// <summary>
+	/// Represents a linked list node
+	/// </summary>
 	public class XNode
 	{
-		private readonly object data;
+		private readonly string data;
 
-		public object Data => data;
+		/// <summary>
+		/// Content of the node
+		/// </summary>
+		public string Data => data;
 
+		/// <summary>
+		/// Next node pointer
+		/// </summary>
 		public XNode Next { get; set; }
 
-		public XNode(object data)
+		/// <summary>
+		/// Creates a new node
+		/// </summary>
+		/// <param name="data">The data parameter</param>
+		public XNode(string data)
 		{
 			this.data = data;
 		}
